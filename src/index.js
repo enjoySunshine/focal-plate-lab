@@ -1,3 +1,17 @@
+// deterministic dock/physics regression toolkit
+export * as Physics from '../physics.js';
+export {
+	Vec3,
+	Quaternion,
+	Box,
+	BoxShape,
+	Body,
+	RigidBody,
+	World,
+	PhysicsWorld,
+	Solver,
+} from '../physics.js';
+
 // core
 export * from './core/PathTracingSceneGenerator.js';
 export * from './core/WebGLPathTracer.js';

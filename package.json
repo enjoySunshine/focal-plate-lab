@@ -9,6 +9,11 @@
       "import": "./src/index.js",
       "require": "./build/index.umd.cjs"
     },
+    "./physics": {
+      "import": "./physics.js",
+      "require": "./physics.cjs"
+    },
+    "./pes": "./pes.js",
     "./webgpu": "./src/webgpu/index.js",
     "./src/*": "./src/*"
   },
@@ -76,6 +81,7 @@
   },
   "scripts": {
     "start": "vite --config ./vite.config.js",
+    "test": "node --test physics.test.js",
     "build-examples": "vite build --config ./vite.config.js",
     "update-screenshots": "node ./scripts/push-screenshots.js",
     "screenshot-diff": "node ./scripts/regression-test.js",
